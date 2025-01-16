@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/banner.jpeg">
+            <div class="overlay"></div>
+            <div class="banner-content">
+                <h1>Playlist</h1>
+                <p>
+                    Browse our library of songs and play them directly in the app.
+                </p>
+            </div>
+        </header>
+        <main>
+            
+            <div class="search-box">
+                <input id="search-input" type="text" placeholder="Search a song ...">
+            </div>
+
+            <div class="playlist">
+            </div>
+        </main>
+    </div>
+    <footer id="player">
+        <div class="current-song">
+            <img class="song-cover" src="images/rasmus-cover.png">
+            <p class="song-details">
+                Natteravn <span class="artist">Rasmus Seebach</span>
+            </p>
+        </div>
+        <div class="player-controls">
+            <button class="player-play-btn" data-playing="false">
+                <div class="player-icon-previous">
+                    <img src="images/previous-button.png" alt="">
+                </div>
+                <div class="player-icon-play">
+                    <img src="images/play-button.png" alt="">
+                </div>
+                <div class="player-icon-pause hidden">
+                    <img src="images/pause-button.png" alt="">
+                </div>
+                <div class="player-icon-next">
+                    <img src="images/next-button.png" alt="">
+                </div>
+                <div class="player-icon-shuffle">
+                    <img src="images/shuffle-button.png" alt="">
+                </div>
+            </button>
+            <div class="player-timeline">
+                <span class="player-time player-time-current">0:0</span>
+                <div class="player-progress">
+                    <div class="player-progress-filled"></div>
+                </div>
+                <span class="player-time player-time-duration">0:0</span>
+            </div>
+        </div>
+        <audio src=""></audio>
+    </footer>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
